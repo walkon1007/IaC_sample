@@ -1,4 +1,4 @@
-# Instructions ****
+# Instructions 
 
 1. These are sample codes for creating a standard virtual machine on Google Platform using GCP Deployment Manager and Terraform. 
 2. Anyone with a valid Google Cloud Account can execute these codes to compare the time of creation and destruction of a VM. 
