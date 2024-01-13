@@ -1,0 +1,18 @@
+resources:
+- name: my-vm
+  type: compute.v1.instance
+  properties:
+    zone: us-central1-f
+    machineType: zones/us-central1-f/machineTypes/g1-small
+    disks:
+    - deviceName: boot
+      type: PERSISTENT
+      boot: true
+      autoDelete: true
+      initializeParams:
+        sourceImage: projects/debian-cloud/global/images/family/debian-11
+    networkInterfaces:
+    - network: global/networks/default
+      accessConfigs:
+      - name: External NAT
+        type: ONE_TO_ONE_NAT
