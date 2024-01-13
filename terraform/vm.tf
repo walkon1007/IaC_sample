@@ -1,5 +1,5 @@
 provider "google" {
-  project = "IaC_Sample"
+  project = "YOUR_PROJECT_NAME" # PUT YOUR PROJECT NAME HERE
   region  = "us-central1"
 }
 
